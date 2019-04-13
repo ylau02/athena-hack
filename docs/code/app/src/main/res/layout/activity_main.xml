@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
+    android:background="@android:color/holo_green_light"
     android:orientation="vertical">
 
     <android.support.design.widget.FloatingActionButton
@@ -17,16 +18,36 @@
         android:clickable="true"
         tools:srcCompat="@tools:sample/avatars" />
 
+    <EditText
+        android:id="@+id/Appname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:contentDescription="@string/app_name"
+        android:ems="10"
+        android:fontFamily="@font/amatic_sc"
+        android:inputType="text"
+        android:text="Bora-Bags"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/ViewReward"
         android:layout_width="match_parent"
         android:layout_height="162dp"
+        android:layout_marginStart="20dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginRight="10dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
         android:contentDescription="Reward @string/hide_bottom_view_on_scroll_behavior"
-        android:fontFamily="casual"
-        android:text="TextView" />
+        android:fontFamily="@font/amatic_sc"
+        android:text="TextView"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/btnScan"
@@ -41,10 +62,10 @@
         android:background="@color/design_default_color_primary_dark"
         android:baselineAligned="false"
         android:elevation="11dp"
-        android:fontFamily="casual"
+        android:fontFamily="@font/amatic_sc"
         android:text="Scan"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
-        android:textSize="14sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="normal" />
 
@@ -57,9 +78,9 @@
         android:layout_marginRight="50dp"
         android:layout_marginBottom="50dp"
         android:background="@color/design_default_color_primary_dark"
-        android:fontFamily="casual"
+        android:fontFamily="@font/amatic_sc"
         android:text="Find"
-        android:textSize="14sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="normal" />
 
@@ -72,12 +93,12 @@
         android:layout_marginLeft="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="20dp"
         android:background="@color/design_default_color_primary_dark"
         android:baselineAligned="false"
-        android:fontFamily="casual"
+        android:fontFamily="@font/amatic_sc"
         android:text="Explore more"
-        android:textSize="14sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="normal" />
 
@@ -86,10 +107,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:fontFamily="casual"
+        android:fontFamily="@font/amatic_sc"
         android:text="Logout"
-        android:textColor="@color/design_default_color_primary_dark"
-        android:textSize="14sp"
-        android:typeface="normal" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

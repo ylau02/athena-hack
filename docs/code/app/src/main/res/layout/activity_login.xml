@@ -30,25 +30,39 @@
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:backgroundTint="@android:color/holo_green_light"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:visibility="visible">
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="78dp"
+                    android:layout_height="19dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
 
                 <AutoCompleteTextView
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:backgroundTint="@android:color/holo_green_light"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/design_default_color_primary_dark"
                     android:completionHint="text @string/prompt_email"
+                    android:fontFamily="@font/amatic_sc"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:popupBackground="@id/email_login_form"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:typeface="normal" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -60,6 +74,7 @@
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/design_default_color_primary_dark"
                     android:hint="@string/prompt_password"
                     android:imeActionId="6"
                     android:imeActionLabel="@string/action_sign_in_short"
@@ -76,13 +91,12 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:background="@color/design_default_color_primary_dark"
-                android:fontFamily="casual"
+                android:fontFamily="@font/amatic_sc"
                 android:text="Sign In"
                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Colored"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
-                android:textSize="14sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 android:typeface="normal" />
 
